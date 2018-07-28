@@ -1,0 +1,1 @@
+In this scenario you will get familiar with the source code for this course and how to use various command line interfaces (CLIs) that will be used throughout this course, such as Git (git). This will prepare you for the rest of Application and Delivery Modernization scenarios.
