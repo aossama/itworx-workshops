@@ -1,6 +1,6 @@
 {
-  "title": "Git SCM",
-  "description": "Git",
+  "title": "Git SCM - Lab 101",
+  "description": "Learn how to be effective with Git version control",
   "details": {
     "steps": [
       {
@@ -24,7 +24,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminal-editor"
   },
   "backend": {
     "imageid": "docker"
