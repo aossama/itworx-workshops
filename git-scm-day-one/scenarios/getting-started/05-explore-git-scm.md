@@ -9,3 +9,9 @@ ls -l
 ```{{execute}}
 
 You will use these projects in the following scenarios to start the migration and modernization process.
+
+Explore git version by executing
+
+```
+git --version
+```{{execute}}
