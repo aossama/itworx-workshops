@@ -10,4 +10,4 @@ If you make an additional change after adding a file to the staging area then th
 
 ## Protip
 
-As described in Step 2, the git status command allows you to view the state of both the working directory and staging area at any point in time.
+* The ```git status```{{execute}} command allows you to view the state of both the working directory and staging area at any point in time.
