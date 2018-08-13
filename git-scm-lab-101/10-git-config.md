@@ -25,7 +25,7 @@ Global level configuration is user-specific, meaning it is applied to an operati
 
 Expanding on git config, let's look at an example in which we write a value:
 
-git config --global user.email "your_email@example.com"
+```git config --global user.email "your_email@example.com"```{{execute}}
 
 This example writes the value your_email@example.com to the configuration name user.email. It uses the --global flag so this value is set for the current operating system user.
 
