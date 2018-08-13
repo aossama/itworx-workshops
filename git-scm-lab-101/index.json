@@ -1,32 +1,34 @@
 {
   "title": "Git SCM - Lab 101",
   "description": "Learn how to be effective with Git version control",
+  "difficulty": "beginner",
+  "time": "10-15 minutes",
   "details": {
-    "steps": [
-      {
-        "title": "Step 1",
-        "text": "step1.md"
-      },
-      {
-        "title": "Step 2",
-        "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
-      },
-      {
-        "title": "Step 4",
-        "text": "step4.md"
-      },
-      {
-        "title": "Step 5",
-        "text": "step5.md"
-      }
-    ],
     "intro": {
       "text": "intro.md"
     },
+    "steps": [
+      {
+        "title": "Step 1 - Git Init",
+        "text": "05-git-init.md"
+      },
+      {
+        "title": "Step 2 - Git Status",
+        "text": "10-git-config.md"
+      },
+      {
+        "title": "Step 3 - Git Add",
+        "text": "15-git-add.md"
+      },
+      {
+        "title": "Step 4 - Git Commit",
+        "text": "20-git-commit.md"
+      },
+      {
+        "title": "Step 5 - Git Ignore",
+        "text": "25-git-ignore.md"
+      }
+    ],
     "finish": {
       "text": "finish.md"
     }
