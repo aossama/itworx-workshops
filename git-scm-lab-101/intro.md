@@ -1,0 +1,5 @@
+In this scenario you'll learn how to initialise a new Git repository and commit files into version control.
+
+Version control allows you to record changes to a file or set of files over time enabling you to go back to a specific version if required. Git is a Distributed Version Control System. This means that instead of having a snapshot of the latest files, you have a complete mirror of the repository on your local machine. The repository keeps track of the changes, when they occurred and who by. Having the complete repository on your local machine reduces delays due to network traffic and enables you to continue working when disconnected.
+
+This Scrapbook environment has been pre-configured with git installed. For more information on installing Git, please refer to the official documentation.
