@@ -6,15 +6,52 @@ When a directory is part of a repository it is called a Working Directory. A wor
 
 ## Task
 
-### Initializing a new repository
+### Populate a new project
 
-A sample projest has been populated in the current directory called project-1/. As this is a new project, a new repository needs to be created. Use;
+We'll start off with just creating a simple project. Go ahead and create a README.md{{open}} file. And add some content to the README.md
+
+<pre class="file" data-filename="./README.md" data-target="replace">
+# Simple HTML Project
+
+This is my first simple HTML project tracked by git.
+</pre>
+
+Then another file called index.html{{open}} with simple HTML content.
+
+<pre class="file" data-filename="./index.html" data-target="replace">
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<title>Page title</title>
+  </head>
+
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
+</html>
+</pre>
+
+These two files will form the initial release of our small project.
+
+### Initializing a new repository / git init
+
+As this is a new project, a new repository needs to be created. Use;
 
 ```git init```{{execute}}
 
-This command creates an empty Git repository - basically a directory called .git with subdirectories for objects, refs/heads, refs/tags, and template files. An initial HEAD file that references the HEAD of the master branch is also created.
+This command creates an empty Git repository - basically a directory called .git with subdirectories for objects, refs/heads, refs/tags, and template files. An initial HEAD file that references the HEAD of the master branch is also created. You will now have a .git directory, and you can inspect that with
 
-### Inspect the repository
+```ls .git/```{{execute}}
+
+This will reveal all the files and directory which construct the repository. For your new empty project, it should show you three entries, among other things:
+
+* a text file called `HEAD`, that has `ref: refs/heads/master` in it. This is similar to a symbolic link and points at refs/heads/master relative to the HEAD file.
+* a subdirectory called objects, which will contain all the objects of your project. You should never have any real reason to look at the objects directly, but you might want to know that these objects are what contains all the real data in your repository.
+* a subdirectory called refs, which contains references to objects.
+
+### Inspect the repository / git status
 
 You can view which files have changed between your working directory and what's been previously committed to the repository using the command:
 
@@ -22,13 +59,7 @@ You can view which files have changed between your working directory and what's 
 
 The output of this command is called the "working tree status".
 
-To view the raw directory of the newly created repository, use;
-
-```ls .git/```{{execute}}
-
-This will reveal all the files and directory which construct the repository.
-
 ## ProTip
 
-* Running ```git init``` in an existing repository is safe. It will not overwrite things that are already there. The primary reason for rerunning git init is to pick up newly added templates.
+* Running ```git init``` in an existing repository is safe. It will not overwrite things that are already there.
 * All files are "untracked" by Git until it's been told otherwise. The details of how is covered in the next step.

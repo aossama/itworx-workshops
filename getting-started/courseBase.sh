@@ -1,12 +1,12 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-mkdir ~/tutorial/project-1/
+mkdir ${HOME}/tutorial/project-1/
 
-cat << EOF >> ~/tutorial/project-1/index.html
+cat << EOF >> ${HOME}/tutorial/project-1/index.html
 <h1>Hello, World!</h1>
 EOF
 
-cat << EOF >> ~/tutorial/project-1/README.md
+cat << EOF >> ${HOME}/tutorial/project-1/README.md
 # Project 1
 
 This is my first git repository.

@@ -17,11 +17,7 @@ Links are [highlighted](http://workshops.itworx.cloud) and can be clicked to ope
 
 ## Terminal Tabs
 
-On the right, you'll see a set of tabs:
-
-![Instructions](/redhat-middleware-workshops/assets/getting-started/tabs.png)
-
-These tabs are quick links for you to use:
+On the right, you'll see a set of tabs. These tabs are quick links for you to use:
 
 * **Terminal** - This tab is always present and is the main terminal into which you will type Linux commands like `ls` and others.
 * **The Plus(+) Button** - This is used to open new Terminals and view applications running on other ports. You won't need to use this during the workshop but it's useful if you want to run another command in a separate terminal.

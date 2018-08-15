@@ -14,7 +14,7 @@
         "text": "05-git-init.md"
       },
       {
-        "title": "Step 2 - Git Status",
+        "title": "Step 2 - Git Config",
         "text": "10-git-config.md"
       },
       {
@@ -22,16 +22,12 @@
         "text": "15-git-add.md"
       },
       {
-        "title": "Step 4 - Git Commit",
-        "text": "20-git-commit.md"
+        "title": "Step 4 - Git Log",
+        "text": "20-git-log.md"
       },
       {
         "title": "Step 5 - Git Ignore",
         "text": "25-git-ignore.md"
-      },
-      {
-        "title": "Step 6 - Git Log",
-        "text": "30-git-log.md"
       }
     ],
     "finish": {
