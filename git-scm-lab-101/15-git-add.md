@@ -1,14 +1,32 @@
-To save, or commit, files into your Git repository you first need to add them to the staging area. Git has three areas, a working directory, a staging area and the repository itself. Users move, otherwise referred to as promote, changes from the working directory, to a staging area before committing them into the repository.
+To save, or commit, files into your Git repository you first need to add them to the index area. Git has three areas, a working directory, a index area and the repository itself. Users move, otherwise referred to as promote, changes from the working directory, to a index area before committing them into the repository.
 
-One of the key approaches with Git is that commits are focused, small and frequent. The staging area helps to maintain this workflow by allowing you to only promote certain files at a time instead of all the changes in your working directory.
+One of the key approaches with Git is that commits are focused, small and frequent. The index area helps to maintain this workflow by allowing you to only promote certain files at a time instead of all the changes in your working directory.
 
 ## Task
 
-Use the command ```git add <file|directory>``` to add files or directories to the staging area.
+### Add files to the index / git add
+
+Use the command ```git add <file|directory>``` to add files or directories to the index area.
 
 ```git add README.md index.html```{{execute}}
 
-The primary function of the git add command, is to promote pending changes in the working directory, to the git staging area. If you make an additional change after adding a file to the staging area then the change will not be reflected until you add the file again.
+This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit. It typically adds the current content of existing paths as a whole, but with some options it can also be used to add content with only part of the changes made to the working tree files applied, or remove paths that do not exist in the working tree anymore.
+
+The "index" holds a snapshot of the content of the working tree, and it is this snapshot that is taken as the contents of the next commit. Thus after making any changes to the working tree, and before running the commit command, you must use the add command to add any new or modified files to the index.
+
+The ```git status``` command can be used to obtain a summary of which files have changes that are staged for the next commit.
+
+```git status```{{execute}}
+
+### Save changes to the repository / git commit
+
+Once a file has been added to the index area it needs to be committed to the repository. The command ```git commit -m "commit message"``` moves files from index to the repository and records the time/date, author and a commit message that can be used to add additional context and reasoning to the changes such as a bug report number.
+
+Only changes added to the index area will be committed, any files in the working directory that have not been staged will not be included.
+
+To commit the staged file use;
+
+```git commit -m "Initial commit"```{{execute}}
 
 Examine the result of this action by using the ```git status``` command;
 
@@ -16,4 +34,5 @@ Examine the result of this action by using the ```git status``` command;
 
 ## Protip
 
-* The ```git status```{{execute}} command allows you to view the state of both the working directory and staging area at any point in time.
+* Each commit is assigned a SHA-1 hash which enables you to refer back to the commit in other commands.
+* The ```git status```{{execute}} command allows you to view the state of both the working directory and index area at any point in time.
