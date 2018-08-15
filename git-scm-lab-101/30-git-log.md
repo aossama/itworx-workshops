@@ -4,8 +4,6 @@ Only changes added to the staging area will be committed, any files in the worki
 
 ## Task
 
-### Save changes to the repository
-
 To commit the staged file use;
 
 ```git commit -m "Initial commit"```{{execute}}

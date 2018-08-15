@@ -4,14 +4,10 @@ The projects are already available in this environment in your _home_ directory.
 
 Explore the list of pre-created projects
 
-```
-ls -l
-```{{execute}}
+```ls -l```{{execute}}
 
 You will use these projects in the following scenarios to start the migration and modernization process.
 
 Explore git version by executing
 
-```
-git --version
-```{{execute}}
+```git --version```{{execute}}

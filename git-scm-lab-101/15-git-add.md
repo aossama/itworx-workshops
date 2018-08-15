@@ -4,9 +4,15 @@ One of the key approaches with Git is that commits are focused, small and freque
 
 ## Task
 
-Use the command git add <file|directory> to add files or directories to the staging area.
+Use the command ```git add <file|directory>``` to add files or directories to the staging area.
 
-If you make an additional change after adding a file to the staging area then the change will not be reflected until you add the file again.
+```git add README.md index.html```{{execute}}
+
+The primary function of the git add command, is to promote pending changes in the working directory, to the git staging area. If you make an additional change after adding a file to the staging area then the change will not be reflected until you add the file again.
+
+Examine the result of this action by using the ```git status``` command;
+
+```git status```{{execute}}
 
 ## Protip
 

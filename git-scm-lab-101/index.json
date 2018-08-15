@@ -5,7 +5,8 @@
   "time": "10-15 minutes",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "00-intro.md",
+      "courseData": "courseBase.sh"
     },
     "steps": [
       {
@@ -27,6 +28,10 @@
       {
         "title": "Step 5 - Git Ignore",
         "text": "25-git-ignore.md"
+      },
+      {
+        "title": "Step 6 - Git Log",
+        "text": "30-git-log.md"
       }
     ],
     "finish": {
