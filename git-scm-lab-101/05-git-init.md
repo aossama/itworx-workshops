@@ -8,7 +8,7 @@ When a directory is part of a repository it is called a Working Directory. A wor
 
 ### Populate a new project
 
-We'll start off with just creating a simple project. Go ahead and create a README.md{{open}} file. And add some content to the README.md
+We'll start off with just creating a simple project. Go ahead and create a `README.md`{{open}} file. And add some content to the README.md
 
 <pre class="file" data-filename="./README.md" data-target="replace">
 # Simple HTML Project
@@ -16,7 +16,7 @@ We'll start off with just creating a simple project. Go ahead and create a READM
 This is my first simple HTML project tracked by git.
 </pre>
 
-Then another file called index.html{{open}} with simple HTML content.
+Then another file called `index.html`{{open}} with simple HTML content.
 
 <pre class="file" data-filename="./index.html" data-target="replace">
 <!DOCTYPE html>
