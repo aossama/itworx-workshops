@@ -2,7 +2,7 @@
   "title": "Git SCM - Lab 101",
   "description": "Learn how to be effective with Git version control",
   "difficulty": "beginner",
-  "time": "10-15 minutes",
+  "time": "25-30 minutes",
   "details": {
     "intro": {
       "text": "00-intro.md",

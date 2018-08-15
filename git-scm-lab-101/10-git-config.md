@@ -42,4 +42,4 @@ This example writes the values to the configuration name user.email and user.nam
 
 ## Protip
 
-* The user.name and user.email is the information of the author which will be recorded in any newly created commits.
+* The `user.name` and `user.email` is the information of the author which will be recorded in any newly created commits.

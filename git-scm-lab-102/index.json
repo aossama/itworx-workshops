@@ -1,8 +1,8 @@
 {
   "title": "Git SCM - Lab 102",
-  "description": "Learn how to be effective with Git version control",
+  "description": "Learn how to collaborate with others using Git version control",
   "difficulty": "beginner",
-  "time": "10-15 minutes",
+  "time": "25-30 minutes",
   "details": {
     "intro": {
       "text": "00-intro.md"
