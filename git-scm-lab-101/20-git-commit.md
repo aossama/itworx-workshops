@@ -17,3 +17,5 @@ Examine the result of this action by using the ```git status``` command;
 ## Protip
 
 * Each commit is assigned a SHA-1 hash which enables you to refer back to the commit in other commands.
+
+* To add the modified files to staging area and commit them on one step use the option -a with git commit command.

@@ -8,6 +8,12 @@ Any files matching a defined wildcard will not be displayed in a git status outp
 
 Add and commit a .gitignore file to the repository to ignore all *.tmp files.
 
+```echo "*.tmp" > .gitignore```{{execute}}
+
+```touch file.tmp```{{execute}}
+
+```git status```{{execute}}
+
 ## Protip
 
-The .gitignore should be committed to the repository to ensure the rules apply across different machines.
+* The .gitignore should be committed to the repository to ensure the rules apply across different machines.
