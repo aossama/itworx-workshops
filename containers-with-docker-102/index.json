@@ -1,0 +1,27 @@
+{
+  "title": "Building Container Images",
+  "description": "Learn how to build an image based on your requirements",
+  "difficulty": "beginner",
+  "time": "45 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Explore Git SCM",
+        "text": "05-explore-git-scm.md"
+      }
+    ],
+    "intro": {
+      "text": "00-intro.md",
+      "courseData": "courseBase.sh"
+    },
+    "finish": {
+      "text": "99-outro.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
