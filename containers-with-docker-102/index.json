@@ -6,8 +6,20 @@
   "details": {
     "steps": [
       {
-        "title": "Explore Git SCM",
-        "text": "05-explore-git-scm.md"
+        "title": "Base Images",
+        "text": "05-base-images.md"
+      },
+      {
+        "title": "Application Images",
+        "text": "15-application-images.md"
+      },
+      {
+        "title": "Build Image from Container",
+        "text": "20-build-image-from-container.md"
+      },
+      {
+        "title": "Build Image from Dockerfile",
+        "text": "25-build-image-from-dockerfile.md"
       }
     ],
     "intro": {

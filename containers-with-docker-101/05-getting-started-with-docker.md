@@ -1,6 +1,6 @@
-## Images and containers
+## Containers are created from Images
 
-A **container** is a runtime instance of an image, it's what the image becomes in memory when executed (that is, an image with state, or a user process). You can see a list of your running containers with the command, ```docker container ps```, just as you would in Linux.
+A **container** is the runtime instance of an image, it's what the image becomes in memory when executed (that is, an image with state, or a user process). You can see a list of the running containers with the command, ```docker container ls```, just as you would in Linux.
 
 A **container** runs _natively_ on Linux and shares the kernel of the host machine with other containers. It runs a discrete process, taking no more memory than any other executable, making it lightweight.
 
@@ -8,13 +8,9 @@ By contrast, a **virtual machine** (VM) runs a full-blown “guest” operating 
 
 ## Test Docker Version
 
-Run ```docker version``` and ensure that you have a supported version of Docker:
+Use ```docker version```{{execute}} to ensure that you have a supported version of Docker.
 
-```docker version```{{execute}}
-
-Run ```docker info``` to view even more details about your docker installation:
-
-```docker info```{{exeucte}}
+Use ```docker info```{{execute}} to view even more details about the docker installation.
 
 ## Run Docker Containers
 
@@ -22,7 +18,7 @@ A container is launched by running an image. An **image** is an executable packa
 
 ```docker container run hello-world```{{execute}}
 
-causes the Docker engine running in your terminal to find an **image** named hello-world. Since you just got started there are no images stored locally (`Unable to find image 'hello-world:latest' locally`) so Docker engine goes to its default **Docker registry**, which is Docker Store, to look for an image named “hello-world”. It finds the image there, pulls it down, and then runs it in a container. And hello-world’s only function is to output the text you see in your terminal, after which the container exits.
+causes the Docker engine running in the terminal to find an **image** named hello-world. Since you just got started there are no images stored locally (`Unable to find image 'hello-world:latest' locally`) so Docker engine goes to its default **Docker registry**, which is Docker Store, to look for an image named “hello-world”. It finds the image there, pulls it down, and then runs it in a container. And hello-world’s only function is to output the text you see in the terminal, after which the container exits.
 
 ![Basic illustration of how docker run](assets/ops-basics-hello-world.svg)
 

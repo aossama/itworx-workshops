@@ -1,5 +1,4 @@
-In the instructions pane on the left (where you're reading this text) are the instructions for each step of each scenario.
-Follow the instructions to complete the scenario.
+In the instructions pane on the left (where you're reading this text) are the instructions for each step of each scenario. Follow the instructions to complete the scenario.
 
 ![Instructions](assets/instructions.png)
 
