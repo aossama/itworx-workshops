@@ -1,0 +1,39 @@
+{
+  "title": "Building Container Images",
+  "description": "Learn how to build an image based on your requirements",
+  "difficulty": "beginner",
+  "time": "45 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Base Images",
+        "text": "05-base-images.md"
+      },
+      {
+        "title": "Application Images",
+        "text": "15-application-images.md"
+      },
+      {
+        "title": "Build Image from Container",
+        "text": "20-build-image-from-container.md"
+      },
+      {
+        "title": "Build Image from Dockerfile",
+        "text": "25-build-image-from-dockerfile.md"
+      }
+    ],
+    "intro": {
+      "text": "00-intro.md",
+      "courseData": "courseBase.sh"
+    },
+    "finish": {
+      "text": "99-outro.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
