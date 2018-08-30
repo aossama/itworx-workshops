@@ -19,18 +19,18 @@ This is my first simple HTML project tracked by git.
 Then another file called `index.html`{{open}} with simple HTML content.
 
 <pre class="file" data-filename="./index.html" data-target="replace">
-<!DOCTYPE html>
+<&zwj;!DOCTYPE html>
 
-<html>
-  <head>
-  	<title>Page title</title>
-  </head>
+<&zwj;html>
+  <&zwj;head>
+  	<&zwj;title>Page title<&zwj;/title>
+  <&zwj;/head>
 
-  <body>
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
-  </body>
-</html>
+  <&zwj;body>
+    <&zwj;h1>My First Heading<&zwj;/h1>
+    <&zwj;p>My first paragraph.<&zwj;/p>
+  <&zwj;/body>
+<&zwj;/html>
 </pre>
 
 These two files will form the initial release of our small project.
