@@ -1,4 +1,4 @@
-`git clone`  /  `git remote`  /  `git fetch`  /  `git push`  /  `git pull`
+`git clone`  &#9733;  `git remote`  &#9733;  `git fetch`  &#9733;  `git push`  &#9733;  `git pull`
 
 Git's distributed collaboration model gives every developer their own copy of the repository, complete with its own 
 local history and branch structure. Users typically need to share a series of commits rather than a single changeset. 
