@@ -41,6 +41,8 @@ While interactive containers are useful for some purposes, developers and operat
 * This image is a user image, created by `aossama`
 * We will hear more about user images (and other types of images) later
 
+And inspect the containers using ```docker container ls -a```{{execute}}
+
 ### Background Containers
 
 Containers can be started in the background. This is the mostly used way to run containers. You run containers in the background with the `-d` flag (**daemon mode**):
@@ -52,3 +54,5 @@ Containers can be started in the background. This is the mostly used way to run 
 * We don't see the output of the container.
 * But don't worry: Docker collects that output and logs it!
 * Docker gives us the ID of the container.
+
+And inspect the containers using ```docker container ls -a```{{execute}}

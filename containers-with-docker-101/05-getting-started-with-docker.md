@@ -20,7 +20,7 @@ A container is launched by running an image. An **image** is an executable packa
 
 causes the Docker engine running in the terminal to find an **image** named hello-world. Since you just got started there are no images stored locally (`Unable to find image 'hello-world:latest' locally`) so Docker engine goes to its default **Docker registry**, which is Docker Store, to look for an image named “hello-world”. It finds the image there, pulls it down, and then runs it in a container. And hello-world’s only function is to output the text you see in the terminal, after which the container exits.
 
-![Basic illustration of how docker run](assets/ops-basics-hello-world.svg)
+![Basic illustration of how docker run](assets/ops-basics-hello-world.png)
 
 If you are familiar with VMs, you may be thinking this is pretty much just like running a virtual machine, except with a central repository of VM images. And in this simple example, that is basically true. But as you go through these exercises you will start to see important ways that Docker and containers differ from VMs. For now, the simple explanation is this:
 
