@@ -16,10 +16,28 @@ You can also specify -v, which shows you the URLs that Git has stored for the sh
 
 ```git remote -v```{{execute}}
 
-### Adding remote repositories
+### Create a new GitLab project
 
-To add a new remote Git repository as a shortname you can reference easily, run `git remote add <shortname> <url>`:
+In order to track the current repository which we cloned in a new repository, we need to create a project for it on the GitLab server.
+
+1. In your dashboard, click the green **New project** button or use the plus icon in the upper right corner of the navigation bar.
+2. This opens the **New project** page.
+3. Provide the following information:
+
+   * Project name: simple-html-app
+   * Project description: Yet another simple HTML application
+   * Visibility Level: Public
+
+4. Click **Create project**.
+
+### Manage remote repositories
+
+Now let's manage this repository by replacing the remote one which was originally cloned to reference another remote repository that you've just created.
+
+To rename a remote repository, use `git remote rename <old> <new>`, we'll rename the current one and make it point to out own repository on GitLab server.
+
+```git remote rename origin old-origin```{{execute}}
+
+To add a new remote Git repository as a shortname you can reference easily, use `git remote add <shortname> <url>`.
 
 ```git remote add origin https://github.com/aossama/simple-html-app```{{execute}}
-
-## Protip

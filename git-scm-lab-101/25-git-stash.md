@@ -20,13 +20,27 @@ Now let's use the `git stash` command which takes your uncommitted changes (both
 
 Which doesn't return anything because we do not have any stashed items. Now add the working tree as a stash with a message to identify this stash;
 
-```git stash save "Stashing the stylesheet"```{{execute}}
+```git stash save --include-untracked "Stashing the stylesheet"```{{execute}}
 
 Inspecting the working tree with ```git status```{{execute}} will reveal that all changes have been stored away. At this point you're free to make changes, create new commits, switch branches, and perform any other Git operations; then come back and re-apply your stash when you're ready.
+
+### View stashed content
+
+Use ```git stash list```{{execute}} to list the stashes that you currently have. Each stash is listed with its name (e.g.  stash@{0} is the latest stash, stash@{1} is the one before, etc.), the name of the branch that was current when the stash was made, and a short description of the commit the stash was based on.
+
+<pre>stash@{0}: On master: Stashing the stylesheet</pre>
 
 ### Re-applying stashed content
 
 Popping your stash removes the changes from your stash and reapplies them to your working copy. You can reapply previously stashed changes with ```git stash pop```{{execute}}.
+
+### Commiting changes
+
+Now add and commit the changes with;
+
+```git add style.css```{{execute}}
+
+```git commit --all --message="Add stylesheet style.css"```{{execute}}
 
 ## Protip
 

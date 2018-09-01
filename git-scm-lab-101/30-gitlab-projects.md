@@ -1,21 +1,30 @@
+GitLab is a Git-based platform that integrates a great number of essential tools for software development and 
+deployment, and project management:
+
+* Code hosting in repositories with version control
+* Track proposals for new implementations, bug reports, and feedback with a fully featured Issue Tracker
+* Organize and prioritize with Issue Boards
+* Code review in Merge Requests with live-preview changes per branch with Review Apps
+* Build, test and deploy with built-in Continuous Integration
+* Deploy your personal and professional static websites with GitLab Pages
+* Integrate with Docker with GitLab Container Registry
+* Track the development lifecycle with GitLab Cycle Analytics
+
 GitLab is a self service hosted platform which enables you to create your own projects, administer the access to the 
 repositories you own, create continous integration and delivery pipelines and more functions without the need to get 
 back to operations team.
 
-## Groups
+GitLab is a fully integrated software development platform that enables you and your team to work cohesively, faster, 
+transparently, and effectively, since the discussion of a new idea until taking that idea to production all the way 
+through, from within the same platform.
 
-With GitLab Groups you can assemble related projects together and grant members access to several projects at once. Groups can also be nested in subgroups.
+## Signup for a new GitLab account
 
-### Use cases
+In order to get going with the rest of this lab, you'll need to signup for a new account on the GitLab server which has 
+been setup specifically setup for the workshops.
 
-You can create groups for numerous reasons. To name a few:
-
-* Organize related projects under the same _namespace_, add members to that group and grant access to all their projects at once
-* Create a group, include members of your team, and make it easier to `@mention` all the team at once in issues and merge requests
-  * Create a group for your company members, and create subgroups for each individual team. Let's say you create a group called company-team, and among others, you created subgroups in this group for each individual team backend-team, frontend-team, and production-team:
-    1. When you start a new implementation from an issue, you add a comment: "@company-team, let's do it! @company-team/backend-team you're good to go!"
-    2. When your backend team needs help from frontend, they add a comment: "@company-team/frontend-team could you help us here please?"
-    3. When the frontend team completes their implementation, they comment: "@company-team/backend-team, it's done! Let's ship it @company-team/production-team
+1. Navigate to http://git.itworx.cloud and register a new account
+2. Login with the new account
 
 ## Projects
 
@@ -67,4 +76,5 @@ And use the `git push` command to send your changes remotely;
 
 ## Outcome
 
-You have created a new project which can be used to sync your local git repository to it.
+* You have created a new project which can be used to sync your local git repository to it.
+* You have syncronized your local repository to the remote GitLab repository.

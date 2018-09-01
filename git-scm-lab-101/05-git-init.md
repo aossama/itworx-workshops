@@ -8,7 +8,7 @@ When a directory is part of a repository it is called a Working Directory. A wor
 
 ### Populate a new project
 
-We'll start off with just creating a simple project. Go ahead and create a `README.md`{{open}} file. And add some content to the README.md
+We'll start off with creating a simple project. Go ahead and create a `README.md`{{open}} file. And add some content to the README.md
 
 <pre class="file" data-filename="./README.md" data-target="replace">
 # Simple HTML Project
@@ -45,13 +45,15 @@ As this is a new project, a new repository needs to be created. Use;
 
 ```git init```{{execute}}
 
-to create an empty Git repository - basically a directory called .git with subdirectories for objects, refs/heads, refs/tags, and template files. An initial HEAD file that references the HEAD of the master branch is also created. You will now have a .git directory, and you can inspect that with
+to create an empty Git repository - basically a directory called `.git/` with subdirectories for **objects**, **refs/heads**, **refs/tags**, and template files. An initial HEAD file that references the HEAD of the master branch is also created. You will now have a .git directory, and you can inspect that with
 
 ```ls -a```{{execute}}
 
+Inspect the contents of the `.git/` directory with:
+
 ```ls .git/```{{execute}}
 
-This will reveal all the files and directory which construct the repository. For your new empty project, it should show you three entries, among other things:
+which reveals all the files and directories that construct the repository. For your new empty project, it should show you three entries, among other things:
 
 * a text file called **HEAD**, that has the content `ref: refs/heads/master` in it. This is similar to a symbolic link (a shortcut) and points at refs/heads/master relative to the HEAD file.
 * a subdirectory called **objects/**, which will contain all the objects of your project. You should never have any real reason to look at the objects directly, but you might want to know that these objects are what contains all the real data in your repository.
@@ -63,7 +65,7 @@ You can view which files have changed between your working directory and what's 
 
 ```git status```{{execute}}
 
-The output of this command is called the "working tree status".
+The output of this command is called the "working tree status". `git status` displays paths that have differences between the index file and the current HEAD commit, paths that have differences between the working tree and the index file, and paths in the working tree that are not tracked by Git (and are not ignored by **.gitignore**). The first are what you _would_ commit by running `git commit`; the second and third are what you _could_ commit by running `git add` before running `git commit`.
 
 ## ProTip
 

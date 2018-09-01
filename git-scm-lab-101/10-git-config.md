@@ -12,7 +12,7 @@ To list all variables set in config file along with their values, use;
 
 ```git config --list```{{execute}}
 
-The name is actually the section and the key separated by a dot, and the value will be escaped.
+The name is actually the section and the key separated by a dot, and the value will be escaped. An alternative way to check the git configuration is by viewing the config file under the `.git/` directory using ```cat .git/config```{{execute}}.
 
 ### git config levels and files
 
@@ -41,6 +41,10 @@ This example writes the values to the configuration name user.email and user.nam
 ```git config user.email```{{execute}}
 
 ```git config user.name```{{execute}}
+
+Or list all variables which has been set in config file along with their values;
+
+```git config --list```{{execute}}
 
 ## Protip
 
