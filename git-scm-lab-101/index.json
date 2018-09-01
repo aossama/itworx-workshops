@@ -10,24 +10,36 @@
     },
     "steps": [
       {
-        "title": "Step 1 - Git Init",
+        "title": "Step 1 - Initialize git repository",
         "text": "05-git-init.md"
       },
       {
-        "title": "Step 2 - Git Config",
+        "title": "Step 2 - Configure git repository",
         "text": "10-git-config.md"
       },
       {
-        "title": "Step 3 - Git Add",
+        "title": "Step 3 - Add files to git repository",
         "text": "15-git-add.md"
       },
       {
-        "title": "Step 4 - Git Log",
+        "title": "Step 5 - Ignoring files",
+        "text": "17-git-ignore.md"
+      },
+      {
+        "title": "Step 4 - Inspecting repository history",
         "text": "20-git-log.md"
       },
       {
-        "title": "Step 5 - Git Ignore",
-        "text": "25-git-ignore.md"
+        "title": "Step 6 - Diffing repository changes",
+        "text": "22-git-diff.md"
+      },
+      {
+        "title": "Step 7 - Stashing unwanted content",
+        "text": "25-git-stash.md"
+      },
+      {
+        "title": "Step 8 - GitLab Projects",
+        "text": "30-gitlab-projects.md"
       }
     ],
     "finish": {

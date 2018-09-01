@@ -4,20 +4,16 @@
   "difficulty": "beginner",
   "time": "5-10 minutes",
   "details": {
-    "steps": [
-      {
-        "title": "Interactive Lab Instructions",
-        "text": "02-instructions.md"
-      },
-      {
-        "title": "Explore Git SCM",
-        "text": "05-explore-git-scm.md"
-      }
-    ],
     "intro": {
       "text": "00-intro.md",
       "courseData": "courseBase.sh"
     },
+    "steps": [
+      {
+        "title": "Interactive Lab Instructions",
+        "text": "02-instructions.md"
+      }
+    ],
     "finish": {
       "text": "99-outro.md"
     }

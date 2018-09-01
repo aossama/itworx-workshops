@@ -1,4 +1,4 @@
-The ```git remote``` command lets you create, view, and delete connections to other repositories. Remote connections 
+The `git remote` command lets you create, view, and delete connections to other repositories. Remote connections 
 are more like bookmarks rather than direct links into other repositories. Instead of providing real-time access to 
 another repository, they serve as convenient names that can be used to reference a not-so-convenient URL.
 
@@ -18,7 +18,7 @@ You can also specify -v, which shows you the URLs that Git has stored for the sh
 
 ### Adding remote repositories
 
-To add a new remote Git repository as a shortname you can reference easily, run ```git remote add <shortname> <url>```:
+To add a new remote Git repository as a shortname you can reference easily, run `git remote add <shortname> <url>`:
 
 ```git remote add origin https://github.com/aossama/simple-html-app```{{execute}}
 

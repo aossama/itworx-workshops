@@ -1,8 +1,8 @@
-The ```git config``` command is a convenience function that is used to get or set Git configuration values on a global or local project level. These configuration levels correspond to .gitconfig text files. Executing git config will modify a configuration text file.
+The ```git config``` command is a convenient function that is used to get or set Git configuration values on a global or local project level. These configuration levels correspond to **.gitconfig** text files. Executing `git config` will modify a configuration text file.
 
 ## Task
 
-### Reading git config values / git config
+### Reading git config values / `git config`
 
 The most basic use case for git config is to invoke it with a configuration name, which will display the set value at that name. Configuration names are dot delimited strings composed of a 'section' and a 'key' based on their hierarchy. For example: user.email
 
@@ -26,11 +26,13 @@ By default, git config will write to a local level if no configuration option is
 
 Global level configuration is user-specific, meaning it is applied to an operating system user. Global configuration values are stored in a file that is located in a user's home directory. ~ /.gitconfig on unix systems and C:\Users\<username>\.gitconfig on windows
 
-### Writing git config values / git config
+### Writing git config values / `git config`
 
-Expanding on git config, let's look at an example in which we write a value:
+Expanding on git config, let's look at an example in which we write a value. To set the email you want attached to your commit transactions, use;
 
 ```git config --global user.email "your_email@example.com"```{{execute}}
+
+To set the name you want attached to your commit transactions, use;
 
 ```git config --global user.name "My Name"```{{execute}}
 
