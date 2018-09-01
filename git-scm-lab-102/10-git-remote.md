@@ -1,6 +1,13 @@
 The `git remote` command lets you create, view, and delete connections to other repositories. Remote connections 
-are more like bookmarks rather than direct links into other repositories. Instead of providing real-time access to 
+are more like *bookmarks* rather than direct links into other repositories. Instead of providing real-time access to 
 another repository, they serve as convenient names that can be used to reference a not-so-convenient URL.
+
+## The origin Remote
+
+When you clone a repository with git clone, it automatically creates a remote connection called **origin** pointing 
+back to the cloned repository. This is useful for developers creating a local copy of a central repository, since it 
+provides an easy way to pull upstream changes or publish local commits. This behavior is also why most Git-based 
+projects call their central repository origin.
 
 ## Task
 
@@ -40,4 +47,10 @@ To rename a remote repository, use `git remote rename <old> <new>`, we'll rename
 
 To add a new remote Git repository as a shortname you can reference easily, use `git remote add <shortname> <url>`.
 
-```git remote add origin https://github.com/aossama/simple-html-app```{{execute}}
+```git remote add origin http://git.itworx.cloud/<username>/simple-html-app.git```
+
+### Inspect remote repositories
+
+Inspect the remote repositories with ```git remote -v```{{execute}} shows that we have two remotes;
+* The **old-origin** which was initially cloned
+* The **origin** which has been added to use it as your own repository
