@@ -26,9 +26,17 @@ The ```git status``` command can be used to obtain a summary of which files have
 
 ## Git add VS SVN add
 
-The git add command should not be confused with svn add, which adds a file to the repository. Instead, git add works on the more abstract level of changes. This means that git add needs to be called every time you alter a file, whereas svn add only needs to be called once for each file. It may sound redundant, but this workflow makes it much easier to keep a project organized.
+The git add command should not be confused with svn add, which adds a file to the repository. Instead, git add works on the 
+more abstract level of changes. This means that git add needs to be called every time you alter a file, whereas svn add only 
+needs to be called once for each file. It may sound redundant, but this workflow makes it much easier to keep a project organized.
 
 ![git-add-vs-svn-add](assets/git-add-vs-svn-add.png)
+
+This makes many Git operations much faster than SVN, since a particular version of a file doesn't have to be "assembled" from 
+its diffs—the complete revision of each file is immediately available from Git's internal database.
+
+Git's snapshot model has a far-reaching impact on virtually every aspect of its version control model, affecting everything from 
+its branching and merging tools to its collaboration work-flows.
 
 ### Save changes to the repository / `git commit`
 
