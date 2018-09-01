@@ -16,7 +16,21 @@ Adding some new content to inspect how git diff works.
 
 Once the new content has been added, inspect the output of ```git status```{{execute}}, which will tell you that the `README.md` file has been modified. Now let's inspect this modifications by using;
 
-```git diff README.me```{{execute}}
+```git diff README.md```{{execute}}
+
+<pre>
+diff --git a/README.md b/README.md
+index 9498e9d..f6e923b 100644
+--- a/README.md
++++ b/README.md
+@@ -1,3 +1,5 @@
+ # Simple HTML Project
+
+-This is my first simple HTML project tracked by git.
++This is a simple HTML project tracked by git.
++
++Adding some new content to inspect how git diff works.
+</pre>
 
 Let us now examine a more detailed breakdown of the diff output.
 
@@ -24,11 +38,11 @@ Let us now examine a more detailed breakdown of the diff output.
 
 <pre>diff --git a/README.md b/README.md</pre>
 
-This line displays the input sources of the diff. We can see that a/diff_test.txt and b/diff_test.txt have been passed to the diff.
+This line displays the input sources of the diff. We can see that *a/README.md* and *b/README.md* have been passed to the diff.
 
 #### Meta data
 
-<pre>index 6b0c6cf..b37e70a 100644</pre>
+<pre>index 9498e9d..f6e923b 100644</pre>
 
 This line displays some internal Git metadata. You will most likely not need this information. The numbers in this output correspond to Git object version hash identifiers.
 
@@ -39,23 +53,29 @@ This line displays some internal Git metadata. You will most likely not need thi
 +++ b/README.md
 </pre>
 
-These lines are a legend that assigns symbols to each diff input source. In this case, changes from a/diff_test.txt are marked with a --- and the changes from b/diff_test.txt are marked with the +++ symbol.
+These lines are a legend that assigns symbols to each diff input source. In this case, changes from a/README.md are marked with a --- and the changes from b/README.md are marked with the +++ symbol.
 
 #### Diff chunks
 
 The remaining diff output is a list of diff 'chunks'. A diff only displays the sections of the file that have changes. In our current example, we only have one chunk as we are working with a simple scenario. Chunks have their own granular output semantics.
 
-@@ -1 +1 @@
--this is a git diff test example
-+this is a diff example
+<pre>
+@@ -1,3 +1,5 @@
+ # Simple HTML Project
 
-The first line is the chunk header. Each chunk is prepended by a header inclosed within @@ symbols. The content of the header is a summary of changes made to the file. In our simplified example, we have -1 +1 meaning line one had changes. In a more realistic diff, you would see a header like:
+-This is my first simple HTML project tracked by git.
++This is a simple HTML project tracked by git.
++
++Adding some new content to inspect how git diff works.
+</pre>
+
+The first line is the chunk header. Each chunk is prepended by a header enclosed within @@ symbols. The content of the header is a summary of changes made to the file. In our simplified example, we have **-1,3 +1,5** meaning line one had changes. In a more realistic diff, you would see a header like:
 
 @@ -34,6 +34,8 @@
 
 In this header example, 6 lines have been extracted starting from line number 34. Additionally, 8 lines have been added starting at line number 34.
 
-The remaining content of the diff chunk displays the recent changes. Each changed line is prepended with a + or - symbol indicating which version of the diff input the changes come from. As we previously discussed, - indicates changes from the a/diff_test.txt and + indicates changes from b/diff_test.txt.
+The remaining content of the diff chunk displays the recent changes. Each changed line is prepended with a + or - symbol indicating which version of the diff input the changes come from. As we previously discussed, - indicates changes from the a/README.md and + indicates changes from b/README.md.
 
 ### Highlighting changes
 
@@ -67,5 +87,8 @@ The remaining content of the diff chunk displays the recent changes. Each change
 
 Invoking ```git diff```{{execute}} without a file path will compare changes across the entire repository. The above, file specific examples, can be invoked without the `README.md` argument and have the same output results across all files in the local repo.
 
-## Protip
+### Commiting changes
 
+Now add and commit the changes with;
+
+```git commit --all --message="Modify README.md"```{{execute}}

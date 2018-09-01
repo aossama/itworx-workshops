@@ -2,11 +2,10 @@
   "title": "Git SCM - Lab 101",
   "description": "Learn how to be effective with Git version control",
   "difficulty": "beginner",
-  "time": "25-30 minutes",
+  "time": "30-35 minutes",
   "details": {
     "intro": {
-      "text": "00-intro.md",
-      "courseData": "courseBase.sh"
+      "text": "00-intro.md"
     },
     "steps": [
       {
@@ -22,11 +21,11 @@
         "text": "15-git-add.md"
       },
       {
-        "title": "Step 5 - Ignoring files",
+        "title": "Step 4 - Ignoring files",
         "text": "17-git-ignore.md"
       },
       {
-        "title": "Step 4 - Inspecting repository history",
+        "title": "Step 5 - Inspecting repository history",
         "text": "20-git-log.md"
       },
       {

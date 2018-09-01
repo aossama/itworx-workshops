@@ -2,7 +2,7 @@
   "title": "Git SCM - Lab 102",
   "description": "Learn how to collaborate with others using Git version control",
   "difficulty": "beginner",
-  "time": "25-30 minutes",
+  "time": "30-35 minutes",
   "details": {
     "intro": {
       "text": "00-intro.md"
@@ -17,16 +17,16 @@
         "text": "10-git-remote.md"
       },
       {
-        "title": "Step 3 - Git Fetch",
+        "title": "Step 3 - Git Push",
+        "text": "13-git-push.md"
+      },
+      {
+        "title": "Step 4 - Git Fetch",
         "text": "15-git-fetch.md"
       },
       {
-        "title": "Step 4 - Git Push",
-        "text": "20-git-push.md"
-      },
-      {
         "title": "Step 5 - Git Pull",
-        "text": "25-git-pull.md"
+        "text": "17-git-pull.md"
       }
     ],
     "finish": {
