@@ -23,12 +23,6 @@ of checking a working copy into SVN’s central repository, you push or pull com
 
 ![Repo-to-repo-collaboration](assets/git.png)
 
-This makes many Git operations much faster than SVN, since a particular version of a file doesn't have to be "assembled" from 
-its diffs—the complete revision of each file is immediately available from Git's internal database.
-
-Git's snapshot model has a far-reaching impact on virtually every aspect of its version control model, affecting everything from 
-its branching and merging tools to its collaboration work-flows.
-
 ## Task
 
 As a convenience, cloning repositories automatically creates a remote connection called **origin** pointing back to the original 
