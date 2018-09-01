@@ -1,25 +1,4 @@
-In this step we'll get exposed to more options around interacting with containers. We'll get more familiar with inspecting containers metadata, viewing containers log and stopping containers.
-
-## Inspect Running Containers
-
-To check the currently running containers, use;
-
-```docker container ls```{{execute}}
-
-Docker tells us:
-
-* The (truncated) ID of our container.
-* The image used to start the container.
-* That our container has been running (Up) for a couple of minutes.
-* Other information (COMMAND, PORTS, NAMES) that we will explain later.
-
-Now let's display detailed information on one or more containers;
-
-```docker container inspect mydb```{{execute}}
-
-```docker container inspect --format='{{.NetworkSettings.Networks.bridge.IPAddress}}' mydb```{{execute}}
-
-```docker container inspect mydb | grep IPAddress```{{execute}}
+In this step we'll get exposed to more options around interacting with containers. We'll get more familiar with inspecting containers metadata, viewing containers log and managing containers.
 
 ## Starting more containers
 

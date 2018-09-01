@@ -2,8 +2,11 @@
   "title": "Building Container Images",
   "description": "Learn how to build an image based on your requirements",
   "difficulty": "beginner",
-  "time": "45 minutes",
+  "time": "30-35 minutes",
   "details": {
+    "intro": {
+      "text": "00-intro.md"
+    },
     "steps": [
       {
         "title": "Base Images",
@@ -22,10 +25,6 @@
         "text": "25-build-image-from-dockerfile.md"
       }
     ],
-    "intro": {
-      "text": "00-intro.md",
-      "courseData": "courseBase.sh"
-    },
     "finish": {
       "text": "99-outro.md"
     }
