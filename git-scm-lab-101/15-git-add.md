@@ -24,6 +24,12 @@ The ```git status``` command can be used to obtain a summary of which files have
 
 ```git status```{{execute}}
 
+## Git add VS SVN add
+
+The git add command should not be confused with svn add, which adds a file to the repository. Instead, git add works on the more abstract level of changes. This means that git add needs to be called every time you alter a file, whereas svn add only needs to be called once for each file. It may sound redundant, but this workflow makes it much easier to keep a project organized.
+
+![git-add-vs-svn-add](assets/git-add-vs-svn-add.png)
+
 ### Save changes to the repository / `git commit`
 
 Once a file has been added to the index area it needs to be committed to the repository. The command ```git commit -m "commit message"``` moves files from index to the repository and records the time/date, author and a commit message that can be used to add additional context and reasoning to the changes such as a bug report number.
