@@ -69,9 +69,9 @@ When Git encounters a conflict during a merge, It will edit the content of the a
 
 <pre>
 here is some content not affected by the conflict
-<<<<<<< master
-this is conflicted text from master
-=======
-this is conflicted text from feature branch
->>>>>>> feature-717
+ <<<<<<< master
+ this is conflicted text from master
+ =======
+ this is conflicted text from feature branch
+ >>>>>>> feature-717
 </pre>

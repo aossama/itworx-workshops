@@ -37,6 +37,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "node6"
+    "imageid": "docker"
   }
 }
