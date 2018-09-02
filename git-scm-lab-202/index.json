@@ -1,0 +1,30 @@
+{
+  "title": "Git SCM - Lab 202",
+  "description": "Get a practical overview of recommended workflows with Git",
+  "difficulty": "beginner",
+  "time": "30-35 minutes",
+  "details": {
+    "intro": {
+      "text": "00-intro.md"
+    },
+    "steps": [
+      {
+        "title": "Interactive Lab Instructions",
+        "text": "02-instructions.md"
+      },
+      {
+        "title": "Explore Git SCM",
+        "text": "05-explore-git-scm.md"
+      }
+    ],
+    "finish": {
+      "text": "99-outro.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
