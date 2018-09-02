@@ -9,12 +9,24 @@
     },
     "steps": [
       {
-        "title": "Interactive Lab Instructions",
-        "text": "02-instructions.md"
+        "title": "Step 1 - Start New Project",
+        "text": "03-start-new-project.md"
       },
       {
-        "title": "Explore Git SCM",
-        "text": "05-explore-git-scm.md"
+        "title": "Step 2 - Populate Skeleton Application",
+        "text": "05-populate-repo.md"
+      },
+      {
+        "title": "Step 3 - Start a Branch",
+        "text": "07-start-branch.md"
+      },
+      {
+        "title": "Step 4 - Create Merge Request",
+        "text": "10-create-merge-request.md"
+      },
+      {
+        "title": "Step 5 - Teamwork",
+        "text": "13-teamwork.md"
       }
     ],
     "finish": {
@@ -25,6 +37,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "node6"
   }
 }
