@@ -44,7 +44,7 @@ To list stored tags in a repo execute the following:
 
 Your repository my have lots of tags at some point in time, to refine the list of tags the `-l` option can be passed with a wild card expression:
 
-```git tag -l *-rc*```{{execute}}
+```git tag -l *-rc```{{execute}}
 
 Which uses the `-l` option and a wildcard expression of `*-rc` which returns a list of all tags marked with a **-rc** prefix, traditionally used to identify release candidates.
 
@@ -64,7 +64,9 @@ You can view the state of a repo at a tag by using the git checkout command.
 
 ```git checkout v1.4```{{execute}}
 
-Which will checkout the v1.4 tag. This puts the repo in a detached `HEAD` state. This means any changes made will not update the tag. They will create a new detached commit. This new detached commit will not be part of any branch and will only be reachable directly by the commits SHA hash. Therefore it is a best practice to create a new branch anytime you're making changes in a detached `HEAD` state.
+Which will checkout the v1.4 tag. This puts the repo in a detached `HEAD` state. This means any changes made will not update the tag. They will create a new detached commit. This new detached commit will not be part of any branch and will only be reachable directly by the commits SHA hash.
+
+Return back to the master branch using ```git checkout master```{{execute}}.
 
 ### Deleting Tags
 
@@ -73,3 +75,7 @@ Deleting tags is a straightforward operation. Passing the `-d` option and a tag 
 ```git tag```{{execute}}
 
 ```git tag -d v1.4-lw```{{execute}}
+
+## Protip
+
+* As a best practice try create a new branch anytime you're making changes in a detached `HEAD` state.
