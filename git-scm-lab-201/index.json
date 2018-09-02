@@ -1,0 +1,46 @@
+{
+  "title": "Git SCM - Lab 102",
+  "description": "Learn how to checkout, branch, tag and reset your repository efficiently.",
+  "difficulty": "beginner",
+  "time": "30-35 minutes",
+  "details": {
+    "intro": {
+      "text": "00-intro.md"
+    },
+    "steps": [
+      {
+        "title": "Step 1 - Git checkout",
+        "text": "02-git-checkout.md"
+      },
+      {
+        "title": "Step 2 - Git branch",
+        "text": "05-git-branch.md"
+      },
+      {
+        "title": "Step 3 - Git tag",
+        "text": "07-git-tag.md"
+      },
+      {
+        "title": "Step 4 - Git merge",
+        "text": "10-git-merge.md"
+      },
+      {
+        "title": "Step 5 - Git rebase",
+        "text": "13-git-rebase.md"
+      },
+      {
+        "title": "Step 6 - Git reset",
+        "text": "15-git-reset.md"
+      }
+    ],
+    "finish": {
+      "text": "99-outro.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
