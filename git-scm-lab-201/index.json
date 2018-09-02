@@ -9,12 +9,12 @@
     },
     "steps": [
       {
-        "title": "Step 1 - Git checkout",
-        "text": "02-git-checkout.md"
+        "title": "Step 1 - Git branch",
+        "text": "02-git-branch.md"
       },
       {
-        "title": "Step 2 - Git branch",
-        "text": "05-git-branch.md"
+        "title": "Step 2 - Git checkout",
+        "text": "05-git-checkout.md"
       },
       {
         "title": "Step 3 - Git tag",
@@ -23,14 +23,6 @@
       {
         "title": "Step 4 - Git merge",
         "text": "10-git-merge.md"
-      },
-      {
-        "title": "Step 5 - Git rebase",
-        "text": "13-git-rebase.md"
-      },
-      {
-        "title": "Step 6 - Git reset",
-        "text": "15-git-reset.md"
       }
     ],
     "finish": {
