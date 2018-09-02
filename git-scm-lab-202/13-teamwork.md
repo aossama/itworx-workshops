@@ -30,7 +30,7 @@ At this point, the college must clone your repository and work on the new **cont
 * Change directory to ```cd another-project-atomic/```{{execute}}
 * Edit the file `another-project-atomic/app.js`{{open}} with content;
 
-<pre>
+<pre class="file" data-filename="./another-project-atomic/app.js" data-target="replace">
 const express = require('express')
 const app = express()
 

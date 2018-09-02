@@ -47,12 +47,7 @@ app.listen(3000, () => console.log('Example app listening on port 3000!'))
 And add the `.gitignore`{{open}} file with the below content;
 
 <pre class="file" data-filename="./.gitignore" data-target="replace">
-const express = require('express')
-const app = express()
-
-app.get('/', (req, res) => res.send('Hello World!'))
-
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+node_modules/
 </pre>
 
 ### Save Changes and Push
