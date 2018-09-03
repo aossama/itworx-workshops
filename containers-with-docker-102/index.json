@@ -13,10 +13,6 @@
         "text": "05-base-images.md"
       },
       {
-        "title": "Application Images",
-        "text": "15-application-images.md"
-      },
-      {
         "title": "Build Image from Container",
         "text": "20-build-image-from-container.md"
       },
