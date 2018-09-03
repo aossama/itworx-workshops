@@ -16,7 +16,7 @@ In this step We will see how to:
 
 Interactive containers are useful for testing purposes and help in the process of image creation without worrying about the resources. To run an interactive container, use;
 
-```docker container run --interactive --tty --rm ubuntu /bin/bash```{{exeucte}}
+```docker container run --interactive --tty --rm ubuntu /bin/bash```{{execute}}
 
 In this illustration, you'll notice that we executed a command `/bin/bash` in a new container based on the `ubuntu` image. This caused docker to pull the `ubuntu:latest` image and create a new container. The `--interactive` and `--tty` instructs docker to **keep STDIN open** and **allocate a pseudo-TTY** for the container.
 

@@ -48,6 +48,8 @@ And navigate to the URL https://[[HOST_SUBDOMAIN]]-8001-[[KATACODA_HOST]].enviro
 
 Now let's modify our application a little bit and run a new version of the application in a new container based on a newly built image;
 
+Open a new tab by clicking on the **+** sign beside the **Terminal** tab;
+
 ```git checkout new-version```{{execute}}
 
 And build a new image, and add the new HTML application content to it. This time we will tag the new image with 1.1 to differentiate it from the old image.
@@ -64,7 +66,7 @@ And navigate to the URL https://[[HOST_SUBDOMAIN]]-8002-[[KATACODA_HOST]].enviro
 
 The command ```docker container inspect <friendly-name|container-id>``` provides more details about a running container, such as IP address.
 
-```docker container inspect mydb```{{execute}}
+```docker container inspect my-new-simple-app```{{execute}}
 
 The command ```docker container logs <friendly-name|container-id>``` will display messages the container has written to standard error or standard out.
 
