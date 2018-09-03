@@ -26,7 +26,7 @@ ahead and checkout a new branch with;
 
 The above example simultaneously creates and checks out `yet-another-branch`. The -b option is a convenience flag that tells Git to run git branch <new-branch> before running git checkout <new-branch>.
 
-```git checkout -b stable unstable```{{execute}}
+```git checkout unstable -b stable ```{{execute}}
 
 By default `git checkout -b` will base the new-branch off the current **HEAD**. An optional additional branch parameter can be passed to git checkout. In the previous example, _stable_ is passed which then bases new-branch _unstable_ off of existing-branch instead of the current **HEAD**.
 
