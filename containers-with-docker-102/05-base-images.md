@@ -35,3 +35,5 @@ From the above output, you can see that the server has one image which is ubuntu
 The command ```docker inspect  <image name:tag>``` provides more details about the downloaded image including Environment variables, the cmd that runs when the container created, etc.
 
 ```docker  inspect ubuntu:latest```{{execute}}
+
+Take a moment to inspect the output of the command, and feel free to ask for assistance in understanding the output.

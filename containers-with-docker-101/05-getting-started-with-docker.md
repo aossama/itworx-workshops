@@ -35,7 +35,7 @@ If you are familiar with VMs, you may be thinking this is pretty much just like 
 
 To find out the running containers on the system, use;
 
-```docker container ls```{{exeucte}}
+```docker container ls```{{execute}}
 
 This will not return the container which we ran previously, because the container is in the stopped state. To find out all the containers that are currently running and stopped on the system, use;
 

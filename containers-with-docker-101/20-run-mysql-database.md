@@ -49,3 +49,19 @@ Although MySQL is running, it is isolated within the container because no networ
 ### Accessing MySQL
 
 Now that our MySQL database is up and running, we need to access it. If a service needs to be accessible by a process not running in a container, then the port needs to be exposed via the Host. Once exposed, it is possible to access the process as if it were running on the host OS itself. We know that by default, MySQL runs on port 3306.
+
+Attach to the `mydb` container with ```docker container exec -it mydb /bin/bash```{{execute}}
+
+![execute-bash-shell](assets/exec-shell.png)
+
+Which will open a new shell inside the `mydb` container that enables to to access the database.
+
+Connect to the database with:
+
+```mysql -u root -p```{{execute}}
+
+And enter the password which has been used earlier **my-secret-pw**. This will give you the access to the MySQL database;
+
+![access-mysql](assets/access-mysql.png)
+
+Exit the MySQL shell using ```exit```{{execute}} and from the container shell using ```exit```{{execute}}

@@ -62,3 +62,5 @@ This will take few seconds:
 * the container doesn't react to this signal (it's a simple Shell script with no special signal handling);
 * few seconds later, since the container is still running, Docker sends the KILL signal;
 * this terminates the container.
+
+And inspect the running containers ```docker container ls```{{execute}}
