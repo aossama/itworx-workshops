@@ -1,6 +1,6 @@
-Docker containers are built from images. Container keeps running as long as the process it started inside the container is still running There are different ways to use containers. These include:
+Docker containers are built from images. A container keeps running as long as the process it started inside the container is still running. There are different ways to use containers. These include:
 
-* **Run a single task**: This could be a shell script or a custom app
+* **Run a single task**: This could be a shell script or a custom application
 * **Interactively**: This connects you to the container similar to the way you SSH into a remote server
 * **In the background**: For long-running services like websites and databases
 
@@ -9,9 +9,6 @@ In this step We will see how to:
 * Run an interactive container
 * Run a non-interactive container
 * Run a container in the background
-* Check the logs of a container
-* Stop a container
-* Inspect containers
 
 ## Task
 

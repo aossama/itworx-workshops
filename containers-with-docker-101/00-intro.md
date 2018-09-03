@@ -9,4 +9,4 @@ Containerization is increasingly popular because containers are:
 * Scalable: You can increase and automatically distribute container replicas.
 * Stackable: You can stack services vertically and on-the-fly.
 
-In this lab you will run a popular, free, lightweight container and explore the basics of how containers work, how the Docker Engine executes and isolates containers from each other. If you already have experience running containers and basic Docker commands you can probably skip this intro exercise.
+In this lab you will run a popular, free, lightweight containers and explore the basics of how containers work, how the Docker Engine executes and isolates containers from each other. If you already have experience running containers and basic Docker commands you can probably skip this intro exercise.

@@ -10,7 +10,7 @@ By contrast, a **virtual machine** (VM) runs a full-blown “guest” operating 
 
 Use ```docker version```{{execute}} to ensure that you have a supported version of Docker.
 
-Use ```docker info```{{execute}} to view even more details about the docker installation.
+Use ```docker info```{{execute}} to view even more details about the docker installation. Take a minute to inspect the output of this command, or ask for help if you need to understand the output.
 
 ## Run Docker Containers
 
