@@ -18,11 +18,7 @@ but it also keeps the main master branch free from questionable code.
 
 To start off we need to prepare the environment, go ahead and clone the repository you created in the previous lab with:
 
-`git clone https://git.itworx.cloud/<username>/simple-html-app.git .`
-
-And change directory into the cloned repository;
-
-```cd simple-html-app/```{{execute}}
+`git clone http://git.itworx.cloud/<username>/simple-html-app.git .`
 
 And inspect all branches in the repository with;
 
