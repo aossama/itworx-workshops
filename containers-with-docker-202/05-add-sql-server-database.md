@@ -20,9 +20,9 @@ The compose file also contains the path to the application Dockerfile and to the
 
 When that completes, you'll have two Docker images:
 
-    * **<your-docker-id>/bulletin-board-db:v2** - which is based on Microsoft's SQL Server image and packages the database schema for the bulletin board
+* **bulletin-board-db:v2** - which is based on Microsoft's SQL Server image and packages the database schema for the bulletin board
 
-    * **<your-docker-id>/bulletin-board-app:v2** - which is the new version of the Node.js application, using SQL Server to store events
+* **bulletin-board-app:v2** - which is the new version of the Node.js application, using SQL Server to store events
 
 You can start the whole app with Docker Compose:
 
@@ -30,9 +30,7 @@ You can start the whole app with Docker Compose:
 
 You'll see compose starts the database first, because it's specified as a dependency for the application container. Then it starts the app container.
 
-<pre>
-    If you list all containers, you'll see there are two instances of the app container. One container started before the database was ready, so it failed - and then Docker Compose started a replacement container, which did connect to the database.
-</pre>
+	If you list all containers, you'll see there are two instances of the app container. One container started before the database was ready, so it failed - and then Docker Compose started a replacement container, which did connect to the database.
 
 ```docker container ls --all```{{execute}}
 

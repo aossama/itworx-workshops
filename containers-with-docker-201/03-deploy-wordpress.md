@@ -34,7 +34,7 @@ And grant the new user full access on the wordpress database;
 
 Finally exit from the side-car container;
 
-```exit;```{{execute}}
+```quit```{{execute}}
 
 ### Create Wordpress Container
 
@@ -44,5 +44,31 @@ Now start a new Wordpress container and link it to the main database container;
 
 ### Install Wordpress
 
-Finally navigate to https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/ which will 
+Navigate to http://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/ which will 
 show you the installer of Wordpress.
+
+* First choose installation language
+
+  ![wp-01](assets/wp-01.png)
+
+* Confirm information collection
+
+  ![wp-02](assets/wp-02.png)
+
+* Configure database parameters
+
+  ![wp-03](assets/wp-03.png)
+
+* Run the installer
+
+  ![wp-04](assets/wp-04.png)
+
+* Fill in the admin information
+
+  ![wp-05](assets/wp-05.png)
+
+* Log in
+
+  ![wp-06](assets/wp-06.png)
+
+Now you can access your new Wordpress installation over URL http://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/

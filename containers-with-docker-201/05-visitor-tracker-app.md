@@ -30,20 +30,25 @@ Note that we are tagging our image with 0.1 as this is the initial release of ou
 
 Run a new container from the application;
 
-```docker run -it --rm --publish 8010:8080 counter:0.1```{{execute}}
+```docker run -d --rm --publish 8010:8080 --name tmp_counter counter:0.1```{{execute}}
 
 Then navigate to https://[[HOST_SUBDOMAIN]]-8010-[[KATACODA_HOST]].environments.katacoda.com/ and notice 
 that the **Visits:** counter cannot connect to a Redis instance to track the number of visits on our page.
 
+Stop the application:
+
+```docker stop tmp_counter```{{execute}}
+
 ### Link Application with Redis
 
-Now let's fix this connectivity issue between our container and Redis database;
+Now let's fix this connectivity issue between our container and Redis database. Run new instances of the 
+application and linking them to the Redis database container.
 
-```docker run --name visitors --publish 8081:8080 --link visitors-counter:redis counter:0.1```{{execute}}
+```docker run -d --name visitors01 --publish 8081:8080 --link visitors-counter:redis counter:0.1```{{execute}}
 
-```docker run --name visitors --publish 8082:8080 --link visitors-counter:redis counter:0.1```{{execute}}
+```docker run -d --name visitors02 --publish 8082:8080 --link visitors-counter:redis counter:0.1```{{execute}}
 
-```docker run --name visitors --publish 8083:8080 --link visitors-counter:redis counter:0.1```{{execute}}
+```docker run -d --name visitors03 --publish 8083:8080 --link visitors-counter:redis counter:0.1```{{execute}}
 
 Now you created three containers each listening on it's own port, but all of them connects and store their 
 visitors count on the Redis server.
