@@ -1,0 +1,30 @@
+{
+  "title": "Node.js with SQL Server on Docker",
+  "description": "Build a simple Node.js bulletin board application, then add SQL Server for persistent storage, and a proxy to improve web performance.",
+  "difficulty": "beginner",
+  "time": "25-30 minutes",
+  "details": {
+    "intro": {
+      "text": "00-intro.md"
+    },
+    "steps": [
+      {
+        "title": "Step 1 - Build Application v1",
+        "text": "03-build-v1-app.md"
+      },
+      {
+        "title": "Step 2 - Add SQL Server Database",
+        "text": "05-add-sql-server-database.md"
+      }
+    ],
+    "finish": {
+      "text": "99-outro.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
