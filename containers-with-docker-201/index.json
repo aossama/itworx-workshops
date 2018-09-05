@@ -1,0 +1,30 @@
+{
+  "title": "Deploying Containers",
+  "description": "In this lab we'll learn how to deploy containerized applications and link them to form a multi-tier application",
+  "difficulty": "beginner",
+  "time": "15-20 minutes",
+  "details": {
+    "intro": {
+      "text": "00-intro.md"
+    },
+    "steps": [
+      {
+        "title": "Step 1 - Deploy Wordpress",
+        "text": "03-deploy-wordpress.md"
+      },
+      {
+        "title": "Step 2 - Visitor Tracker App",
+        "text": "05-visitor-tracker-app.md"
+      }
+    ],
+    "finish": {
+      "text": "99-outro.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

@@ -1,0 +1,1 @@
+Now that you experimented with deploying containerized applications and linking services together, let's learn how to run them using an automated way.
