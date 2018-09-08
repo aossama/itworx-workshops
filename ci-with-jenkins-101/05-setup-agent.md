@@ -21,12 +21,12 @@ The Host IP address is the IP of your build agent / Docker Host.
 
 The Docker Agent Template is the Container which will be started to handle your build process.
 
-Click **Docker Agent templates...** and then **Add Docker Template**. You can now configure the container options.
-Set the label of the agent to docker-agent. This is used by the Jenkins builds to indicate it should be built via the Docker Agent we're defining.
-Make sure it is **Enabled**.
-For the **Docker Image**, use benhall/dind-jenkins-agent:v2. This image is configured with a Docker client
-Under **Container Settings**, In the "Volumes" text box enter /var/run/docker.sock:/var/run/docker.sock. This allows our build container to communicate with the host.
-For **Connect Method** select Connect with SSH. The image is based on the Jenkins SSH Slave image meaning the default Inject SSH key will handle the authenication.
-Click **Save**.
+* Click **Docker Agent templates...** and then **Add Docker Template**. You can now configure the container options.
+* Set the label of the agent to docker-agent. This is used by the Jenkins builds to indicate it should be built via the Docker Agent we're defining.
+* Make sure it is **Enabled**.
+* For the **Docker Image**, use benhall/dind-jenkins-agent:v2. This image is configured with a Docker client
+* Under **Container Settings**, In the "Volumes" text box enter /var/run/docker.sock:/var/run/docker.sock. This allows our build container to communicate with the host.
+* For **Connect Method** select Connect with SSH. The image is based on the Jenkins SSH Slave image meaning the default Inject SSH key will handle the authenication.
+* Click **Apply** then **Save**.
 
 Jenkins can now start a **Build Agent** as a container when required.
