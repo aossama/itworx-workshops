@@ -1,0 +1,1 @@
+In this scenario you'll learn how to configure Jenkins to build Docker Images based on a Dockerfile. The scenario is designed to demostrate how you can use Docker within a CI/CD pipeline, using Images as a build artefact that can be promoted to different environments and finally production.
