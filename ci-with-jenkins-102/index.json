@@ -1,0 +1,30 @@
+{
+  "title": "Pipelines with Jenkins",
+  "description": "Getting Started with the course environment",
+  "difficulty": "beginner",
+  "time": "25-30 minutes",
+  "details": {
+    "intro": {
+      "text": "00-intro.md"
+    },
+    "steps": [
+      {
+        "title": "Interactive Lab Instructions",
+        "text": "02-instructions.md"
+      },
+      {
+        "title": "Explore Git SCM",
+        "text": "05-explore-git-scm.md"
+      }
+    ],
+    "finish": {
+      "text": "99-outro.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
