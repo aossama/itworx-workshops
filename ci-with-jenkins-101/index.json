@@ -17,8 +17,12 @@
         "text": "05-setup-agent.md"
       },
       {
-        "title": "Step 3 - Create and Build Project",
+        "title": "Step 3 - Freestyle Project",
         "text": "07-create-project.md"
+      },
+      {
+        "title": "Step 4 - Pipeline Project",
+        "text": "10-pipeline-project.md"
       }
     ],
     "finish": {
@@ -26,7 +30,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "docker"

@@ -18,8 +18,8 @@ Because the logical of how to build is specified in our Dockerfile, Jenkins only
 <pre>
 ls
 docker info
-docker build -t katacoda/jenkins-demo:${BUILD_NUMBER} .
-docker tag katacoda/jenkins-demo:${BUILD_NUMBER} katacoda/jenkins-demo:latest
+docker build -t jenkins-demo:${BUILD_NUMBER} .
+docker tag jenkins-demo:${BUILD_NUMBER} jenkins-demo:latest
 docker images
 </pre>
 
@@ -43,14 +43,12 @@ It's normal for this to take a few moments to complete.
 
 ### View Console Output
 
-Once the build has completed you should see the Image and Tags using the Docker CLI docker images.
+Once the build has completed you should see the Image and Tags using the Docker CLI docker images. What was built into the Docker Image was a small HTTP server with a tiny HTML application. You can launch it using: 
 
-What was built into the Docker Image was a small HTTP server. You can launch it using: docker run -d -p 80:80 katacoda/jenkins-demo:latest
-
-Using cURL you should see the server respond: curl host01
+```docker run -d -p 8001:80 jenkins-demo:latest```{{execute}
 
 Jenkins will have the console output of our build, available via the dashboard. You should be able to access it below:
 
-https://2886795298-8080-cykoria03.environments.katacoda.com/job/Katacoda%20Jenkins%20Demo/1/console
+https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/job/Jenkins%20Demo/1/console
 
 If you rebuilt the project, you would see a version 2 image created and the :latest tag reattached.
